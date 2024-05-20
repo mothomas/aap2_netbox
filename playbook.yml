@@ -1,0 +1,19 @@
+---
+- name: Ansible URI Module Examples
+  hosts: localhost
+
+  tasks:
+  
+    - name: Find device in Netbox
+      ansible.builtin.uri:
+        url: "https://192.168.100.24:8000/api/dcim/devices?name
+        method: GET
+        headers:
+          Authorization: "Token b361e1bb6ec9c616e17dc65e61bfbeaf3f368833"
+        status_code: 200
+        validate_certs: no
+      register: device
+
+    - name: show devices 
+      ansible.builtin.debug:
+         msg: "{{device}}"
