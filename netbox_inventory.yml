@@ -15,8 +15,8 @@ group_by:
   - device_roles
 
 # Filter out not connected items such as racks
-device_query_filters:
-  - has_primary_ip: 'true'
+#device_query_filters:
+#  - has_primary_ip: 'true'
 
 ## Only retrieve active machines
 query_filters:
