@@ -28,6 +28,6 @@
 
   - name: show devices 
     ansible.builtin.debug:
-       msg: "{{device}}"
+       msg: "{{devices}}"
 
          
