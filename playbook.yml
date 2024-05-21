@@ -28,6 +28,6 @@
 
   - name: show devices 
     ansible.builtin.debug:
-       msg: "{{devices}}"
+       msg: "{{netbox_devices}}"
 
          
