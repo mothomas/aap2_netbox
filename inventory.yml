@@ -19,7 +19,7 @@ group_by:
 ## Only retrieve active machines
 query_filters:
   - status: active
-    sites: lab
+  
 
 
 keyed_groups:
